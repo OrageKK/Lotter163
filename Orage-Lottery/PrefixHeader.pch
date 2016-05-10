@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  Orage-Lottery
+//
+//  Created by 黄坤 on 16/5/10.
+//  Copyright © 2016年 wzpnyg. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 随机色
+#define OARandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+
+#endif /* PrefixHeader_pch */
