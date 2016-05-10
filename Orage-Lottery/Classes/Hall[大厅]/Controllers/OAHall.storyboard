@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--购彩大厅-->
         <scene sceneID="jcp-xa-nFf">
             <objects>
-                <viewController id="HJQ-lI-5O1" sceneMemberID="viewController">
+                <viewController id="HJQ-lI-5O1" customClass="OAHallController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NL1-AU-lSd"/>
                         <viewControllerLayoutGuide type="bottom" id="Vs4-jK-6r2"/>
@@ -18,7 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WqG-sR-xgD"/>
+                    <navigationItem key="navigationItem" title="购彩大厅" id="WqG-sR-xgD">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="LQy-ic-tdJ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="39g-hd-l5a">
+                                <rect key="frame" x="20" y="4" width="63" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="CS50_activity_image"/>
+                                <connections>
+                                    <action selector="activityBtnClick" destination="HJQ-lI-5O1" eventType="touchUpInside" id="yrP-CM-mlm"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5mY-VM-2Og" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,4 +54,7 @@
             <point key="canvasLocation" x="431" y="341"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CS50_activity_image" width="63" height="36"/>
+    </resources>
 </document>
