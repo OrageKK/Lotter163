@@ -19,11 +19,19 @@
  UIBarMetricsCompactPrompt      有提示标题,并且横着才显示
  */
 
+// 第一次初始化这个类的时候调用,并且只调用一次
++ (void)initialize {
+    UINavigationBar *nav = [UINavigationBar appearance];//appearance 外观代理对象(单例)返回值为控件类型
+    //通过外观代理对象设置的界面效果,将来任何通过此类实例化的控件,界面效果都一样
+    
+    //统一设置导航栏的背景
+    [nav setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //统一设置导航栏的背景
-    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
 }
 
 @end
