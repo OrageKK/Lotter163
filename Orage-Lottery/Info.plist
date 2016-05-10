@@ -34,5 +34,9 @@
 	</array>
 	<key>CFBundleDisplayName</key>
 	<string>网易彩票测试</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>UIStatusBarHidden</key>
+	<true/>
 </dict>
 </plist>
