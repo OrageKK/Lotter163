@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OALuckyViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waz-2W-tpf">
+                    <rect key="frame" x="24" y="24" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="IXV-TA-KuT"/>
+                        <constraint firstAttribute="height" constant="22" id="jGw-SM-WSL"/>
+                    </constraints>
+                    <state key="normal" image="LuckyConfirmClose"/>
+                    <connections>
+                        <action selector="closeBtnClick" destination="-1" eventType="touchUpInside" id="s8i-hc-pfv"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="LuckyThreeButton" translatesAutoresizingMaskIntoConstraints="NO" id="LWc-to-scb">
+                    <rect key="frame" x="210" y="68" width="180" height="82"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="82" id="pGN-zX-Go5"/>
+                        <constraint firstAttribute="width" constant="180" id="xua-sM-Qre"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxW-aA-YZp">
+                    <rect key="frame" x="267" y="68" width="67" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="Pwg-jn-5nb"/>
+                        <constraint firstAttribute="width" constant="67" id="hyt-p8-zNj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="星座"/>
+                    <state key="highlighted" title="星座" backgroundImage="LuckyMidPressed"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cI-Gs-Hgs">
+                    <rect key="frame" x="342" y="100" width="48.5" height="48.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48.5" id="Isz-cx-uyp"/>
+                        <constraint firstAttribute="width" constant="48.5" id="ZbQ-id-kYH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="5注"/>
+                    <state key="highlighted" title="5注" backgroundImage="LuckyRightPressed"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqS-g6-acW">
+                    <rect key="frame" x="209" y="100" width="49.5" height="49.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49.5" id="0yL-hZ-B6C"/>
+                        <constraint firstAttribute="height" constant="49.5" id="OG0-xw-bej"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="双色球"/>
+                    <state key="highlighted" title="双色球" backgroundImage="LuckyLeftPressed"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="oxW-aA-YZp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="0ys-pe-UOM"/>
+                <constraint firstItem="oxW-aA-YZp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3UV-EM-qLA"/>
+                <constraint firstItem="waz-2W-tpf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="3X1-og-3F6"/>
+                <constraint firstItem="LqS-g6-acW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-66" id="3yS-aU-tRl"/>
+                <constraint firstItem="LWc-to-scb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="Edp-3H-SSk"/>
+                <constraint firstItem="1cI-Gs-Hgs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="IUt-nl-zSf"/>
+                <constraint firstItem="LWc-to-scb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cpN-07-ugb"/>
+                <constraint firstItem="LqS-g6-acW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="jZm-mp-KhW"/>
+                <constraint firstItem="1cI-Gs-Hgs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="66" id="paV-z0-svb"/>
+                <constraint firstItem="waz-2W-tpf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="uEr-wp-lhY"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="LuckyConfirmClose" width="22" height="22"/>
+        <image name="LuckyLeftPressed" width="49" height="49"/>
+        <image name="LuckyMidPressed" width="67" height="67"/>
+        <image name="LuckyRightPressed" width="48" height="48"/>
+        <image name="LuckyThreeButton" width="180" height="82"/>
+    </resources>
+</document>

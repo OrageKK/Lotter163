@@ -141,7 +141,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ybR-Jp-HdP" kind="show" id="34W-kC-vrl"/>
+                                            <segue destination="XkB-sI-jRe" kind="show" id="wfB-fE-TgC"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -203,7 +203,7 @@
         <!--Group Buy Controller-->
         <scene sceneID="OfN-nv-iUK">
             <objects>
-                <viewController id="C6T-m8-1fo" customClass="OAGroupBuyController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="C6T-m8-1fo" customClass="OAGroupBuyController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="02P-cF-he9"/>
                         <viewControllerLayoutGuide type="bottom" id="OzN-wq-vMT"/>
@@ -230,24 +230,6 @@
             </objects>
             <point key="canvasLocation" x="1980" y="78"/>
         </scene>
-        <!--Lucky Controller-->
-        <scene sceneID="24y-Be-cdF">
-            <objects>
-                <viewController id="ybR-Jp-HdP" customClass="OALuckyController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nLI-9a-kfB"/>
-                        <viewControllerLayoutGuide type="bottom" id="CbE-09-IbP"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Qa6-wy-LH4">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zQp-cS-MQp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1980" y="834"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="XMq-84-k0n">
             <objects>
@@ -266,6 +248,85 @@
             </objects>
             <point key="canvasLocation" x="511" y="425"/>
         </scene>
+        <!--幸运选号-->
+        <scene sceneID="cmG-Db-Pfe">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="XkB-sI-jRe" customClass="OALuckyController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cG7-fp-il7"/>
+                        <viewControllerLayoutGuide type="bottom" id="CF5-VB-eSa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bX5-hl-6Ty">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luck_entry_background" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-AV-abU">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="lucky_entry_light0" translatesAutoresizingMaskIntoConstraints="NO" id="Q3d-Xb-pzI">
+                                <rect key="frame" x="184" y="106" width="231" height="29"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7T-Qf-cMV">
+                                <rect key="frame" x="156" y="195" width="137" height="140"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="mZ6-kI-AgG"/>
+                                    <constraint firstAttribute="height" constant="140" id="xXL-Xy-4bM"/>
+                                </constraints>
+                                <state key="normal" image="luck_entry_birthday_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a85-Ud-qXL">
+                                <rect key="frame" x="156" y="353" width="137" height="140"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="luck_entry_lots_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoG-dy-nFz">
+                                <rect key="frame" x="307" y="353" width="137" height="140"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="luck_entry_roulette_button_normal"/>
+                                <connections>
+                                    <action selector="showLuckRotateWheel" destination="XkB-sI-jRe" eventType="touchUpInside" id="Ex7-xD-fV2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvO-17-r3s">
+                                <rect key="frame" x="307" y="195" width="137" height="140"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="luck_entry_number_button_normal"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FoG-dy-nFz" firstAttribute="width" secondItem="pvO-17-r3s" secondAttribute="width" id="6yV-v0-uRG"/>
+                            <constraint firstItem="a85-Ud-qXL" firstAttribute="height" secondItem="m7T-Qf-cMV" secondAttribute="height" id="8kF-53-WPE"/>
+                            <constraint firstItem="pvO-17-r3s" firstAttribute="centerX" secondItem="bX5-hl-6Ty" secondAttribute="centerX" constant="75" id="9f2-Sm-aYQ"/>
+                            <constraint firstItem="FoG-dy-nFz" firstAttribute="height" secondItem="pvO-17-r3s" secondAttribute="height" id="BzC-eR-Qek"/>
+                            <constraint firstItem="a85-Ud-qXL" firstAttribute="width" secondItem="m7T-Qf-cMV" secondAttribute="width" id="HjE-y3-1C3"/>
+                            <constraint firstAttribute="bottom" secondItem="6ra-AV-abU" secondAttribute="bottom" id="Itm-gu-K3X"/>
+                            <constraint firstItem="Q3d-Xb-pzI" firstAttribute="top" secondItem="cG7-fp-il7" secondAttribute="bottom" constant="42" id="Ovm-2N-Xw8"/>
+                            <constraint firstItem="a85-Ud-qXL" firstAttribute="centerX" secondItem="m7T-Qf-cMV" secondAttribute="centerX" id="SGC-58-QzQ"/>
+                            <constraint firstItem="pvO-17-r3s" firstAttribute="height" secondItem="m7T-Qf-cMV" secondAttribute="height" id="SvC-bA-naK"/>
+                            <constraint firstItem="a85-Ud-qXL" firstAttribute="top" secondItem="m7T-Qf-cMV" secondAttribute="bottom" constant="18" id="Tcn-gd-NXl"/>
+                            <constraint firstItem="m7T-Qf-cMV" firstAttribute="top" secondItem="Q3d-Xb-pzI" secondAttribute="bottom" constant="60" id="Tpp-Np-INZ"/>
+                            <constraint firstItem="Q3d-Xb-pzI" firstAttribute="centerX" secondItem="bX5-hl-6Ty" secondAttribute="centerX" id="Znl-0k-mRc"/>
+                            <constraint firstItem="pvO-17-r3s" firstAttribute="width" secondItem="m7T-Qf-cMV" secondAttribute="width" id="d3y-xG-4v2"/>
+                            <constraint firstItem="FoG-dy-nFz" firstAttribute="centerX" secondItem="pvO-17-r3s" secondAttribute="centerX" id="fqM-Hf-fgS"/>
+                            <constraint firstItem="m7T-Qf-cMV" firstAttribute="centerX" secondItem="bX5-hl-6Ty" secondAttribute="centerX" constant="-75" id="iX3-zY-eFN"/>
+                            <constraint firstItem="FoG-dy-nFz" firstAttribute="top" secondItem="a85-Ud-qXL" secondAttribute="top" id="ps9-fE-DsB"/>
+                            <constraint firstAttribute="trailing" secondItem="6ra-AV-abU" secondAttribute="trailing" id="sPl-jE-l8x"/>
+                            <constraint firstItem="6ra-AV-abU" firstAttribute="leading" secondItem="bX5-hl-6Ty" secondAttribute="leading" id="toT-XB-dRJ"/>
+                            <constraint firstItem="6ra-AV-abU" firstAttribute="top" secondItem="cG7-fp-il7" secondAttribute="bottom" id="wM8-kR-v1E"/>
+                            <constraint firstItem="pvO-17-r3s" firstAttribute="top" secondItem="m7T-Qf-cMV" secondAttribute="top" id="yXz-Cv-OzK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="幸运选号" id="WXq-Rc-luF"/>
+                    <connections>
+                        <outlet property="lightImageView" destination="Q3d-Xb-pzI" id="9Yy-Bi-xmc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q4V-ax-HmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="808"/>
+        </scene>
     </scenes>
     <resources>
         <image name="YellowDownArrow" width="16" height="16"/>
@@ -277,5 +338,11 @@
         <image name="discovery_luckyBet_title" width="96" height="23"/>
         <image name="discovery_news_icon" width="115" height="79"/>
         <image name="discovery_news_title" width="55" height="23"/>
+        <image name="luck_entry_background" width="320" height="368"/>
+        <image name="luck_entry_birthday_button_normal" width="137" height="140"/>
+        <image name="luck_entry_lots_button_normal" width="153" height="152"/>
+        <image name="luck_entry_number_button_normal" width="130" height="139"/>
+        <image name="luck_entry_roulette_button_normal" width="140" height="144"/>
+        <image name="lucky_entry_light0" width="231" height="29"/>
     </resources>
 </document>

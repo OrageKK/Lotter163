@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0CA77E1CE23D480048BF35 /* OALuckyBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CA77A1CE23D480048BF35 /* OALuckyBtn.m */; };
+		1A0CA77F1CE23D480048BF35 /* OARotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CA77C1CE23D480048BF35 /* OARotateView.m */; };
+		1A0CA7801CE23D480048BF35 /* OARotateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0CA77D1CE23D480048BF35 /* OARotateView.xib */; };
+		1A0CA7841CE23D560048BF35 /* OALuckyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CA7821CE23D560048BF35 /* OALuckyViewController.m */; };
+		1A0CA7851CE23D560048BF35 /* OALuckyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0CA7831CE23D560048BF35 /* OALuckyViewController.xib */; };
 		1AC537351CE19E4B00DB6BBE /* OABottoomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC537341CE19E4B00DB6BBE /* OABottoomButton.m */; };
 		1AC537391CE1F09600DB6BBE /* UIView+MDRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC537381CE1F09600DB6BBE /* UIView+MDRExtension.m */; };
 		1AC5373C1CE1F4BC00DB6BBE /* OANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5373B1CE1F4BC00DB6BBE /* OANavigationController.m */; };
@@ -29,6 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A0CA7791CE23D480048BF35 /* OALuckyBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALuckyBtn.h; sourceTree = "<group>"; };
+		1A0CA77A1CE23D480048BF35 /* OALuckyBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALuckyBtn.m; sourceTree = "<group>"; };
+		1A0CA77B1CE23D480048BF35 /* OARotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARotateView.h; sourceTree = "<group>"; };
+		1A0CA77C1CE23D480048BF35 /* OARotateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARotateView.m; sourceTree = "<group>"; };
+		1A0CA77D1CE23D480048BF35 /* OARotateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OARotateView.xib; sourceTree = "<group>"; };
+		1A0CA7811CE23D560048BF35 /* OALuckyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALuckyViewController.h; sourceTree = "<group>"; };
+		1A0CA7821CE23D560048BF35 /* OALuckyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALuckyViewController.m; sourceTree = "<group>"; };
+		1A0CA7831CE23D560048BF35 /* OALuckyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OALuckyViewController.xib; sourceTree = "<group>"; };
 		1AC537331CE19E4B00DB6BBE /* OABottoomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OABottoomButton.h; sourceTree = "<group>"; };
 		1AC537341CE19E4B00DB6BBE /* OABottoomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OABottoomButton.m; sourceTree = "<group>"; };
 		1AC537371CE1F09600DB6BBE /* UIView+MDRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+MDRExtension.h"; path = "Category/UIView+MDRExtension.h"; sourceTree = "<group>"; };
@@ -196,6 +209,9 @@
 				1AC537441CE22B0F00DB6BBE /* OAGroupBuyController.m */,
 				1AC537461CE22B3A00DB6BBE /* OALuckyController.h */,
 				1AC537471CE22B3A00DB6BBE /* OALuckyController.m */,
+				1A0CA7811CE23D560048BF35 /* OALuckyViewController.h */,
+				1A0CA7821CE23D560048BF35 /* OALuckyViewController.m */,
+				1A0CA7831CE23D560048BF35 /* OALuckyViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -219,6 +235,11 @@
 			children = (
 				1AC537491CE22C2200DB6BBE /* OAAllCategoryBtn.h */,
 				1AC5374A1CE22C2200DB6BBE /* OAAllCategoryBtn.m */,
+				1A0CA7791CE23D480048BF35 /* OALuckyBtn.h */,
+				1A0CA77A1CE23D480048BF35 /* OALuckyBtn.m */,
+				1A0CA77B1CE23D480048BF35 /* OARotateView.h */,
+				1A0CA77C1CE23D480048BF35 /* OARotateView.m */,
+				1A0CA77D1CE23D480048BF35 /* OARotateView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -496,9 +517,11 @@
 				1AFB29C61CE16C2400B23DD5 /* OAMy.storyboard in Resources */,
 				1AFB29C21CE16C0F00B23DD5 /* OADiscovery.storyboard in Resources */,
 				1AFB29C01CE16C0200B23DD5 /* OAArena.storyboard in Resources */,
+				1A0CA7801CE23D480048BF35 /* OARotateView.xib in Resources */,
 				1AFB29851CE1660400B23DD5 /* LaunchScreen.storyboard in Resources */,
 				1AFB29C41CE16C1700B23DD5 /* OAHistory.storyboard in Resources */,
 				1AFB29BE1CE16BF200B23DD5 /* OAHall.storyboard in Resources */,
+				1A0CA7851CE23D560048BF35 /* OALuckyViewController.xib in Resources */,
 				1AFB29821CE1660400B23DD5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,12 +534,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC537451CE22B0F00DB6BBE /* OAGroupBuyController.m in Sources */,
+				1A0CA77F1CE23D480048BF35 /* OARotateView.m in Sources */,
 				1AFB29BB1CE1667500B23DD5 /* AppDelegate.m in Sources */,
 				1AFB29CC1CE170F100B23DD5 /* OABottomView.m in Sources */,
 				1AC5373F1CE2055200DB6BBE /* OAHallController.m in Sources */,
 				1AC537391CE1F09600DB6BBE /* UIView+MDRExtension.m in Sources */,
+				1A0CA7841CE23D560048BF35 /* OALuckyViewController.m in Sources */,
 				1AFB29C91CE170C300B23DD5 /* OATabBarController.m in Sources */,
 				1AC537351CE19E4B00DB6BBE /* OABottoomButton.m in Sources */,
+				1A0CA77E1CE23D480048BF35 /* OALuckyBtn.m in Sources */,
 				1AC537481CE22B3A00DB6BBE /* OALuckyController.m in Sources */,
 				1AC5374B1CE22C2200DB6BBE /* OAAllCategoryBtn.m in Sources */,
 				1AC537421CE223CD00DB6BBE /* OAArenaController.m in Sources */,
