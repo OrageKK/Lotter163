@@ -7,6 +7,17 @@
 //
 
 #import "OABottomView.h"
+#import "OABottoomButton.h"
+
+@interface OABottomView()
+/**
+ *  用来保存底部被选中的按钮
+ */
+@property (weak, nonatomic) OABottoomButton *selectBtn;
+
+@end
+
+
 
 @implementation OABottomView
 
@@ -27,11 +38,19 @@
 }
 
 #pragma mark - 点击底部的按钮时调用
-- (void)btnClick:(UIButton *)sender {
+- (void)btnClick:(OABottoomButton *)sender {
     
     NSLog(@"按钮被点了");
     
     // MARK: - 1.修改按钮的状态
+    // 1.将之前保存的清除
+    self.selectBtn.selected = NO;
+    
+    // 2.将选中的状态设置为yes
+    sender.selected = YES;
+    
+    // 3.赋值保存
+    self.selectBtn = sender;
     
     
     
