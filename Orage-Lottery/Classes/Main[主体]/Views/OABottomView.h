@@ -7,6 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@class OABottomView;
+
+#pragma mark - 制定代理协议
+@protocol OABottomViewDelegate <NSObject>
+
+@optional
+
+- (void)bottomView:(OABottomView *)bottomView didSelectIndex:(NSUInteger)idx;
+
+@end
 
 @interface OABottomView : UIView
 /**
@@ -16,4 +26,7 @@
  *  @param selImg 选中状态的图片
  */
 - (void)addButtonWithImage:(UIImage *)norImg andSelectImage:(UIImage *)selImg;
+
+//设置代理属性
+@property (weak, nonatomic) id<OABottomViewDelegate> delegate;
 @end

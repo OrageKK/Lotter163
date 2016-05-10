@@ -8,7 +8,7 @@
 
 #import "OATabBarController.h"
 #import "OABottomView.h"
-@interface OATabBarController ()
+@interface OATabBarController () <OABottomViewDelegate>
 
 @end
 
@@ -17,14 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //MARK:添加标签的子控制器
+    // MARK:添加标签的子控制器
     [self setupChildVcs];
     
-    //添加底部标签
+    // MARK:添加底部标签
     [self setupBottomView];
     
     // MARK: - 通过此属性修改选中的控制器
-    self.selectedIndex = 2;
+//    self.selectedIndex = 2;
     
 }
 
@@ -37,6 +37,9 @@
     //设置frame信息
     bottomView.frame = self.tabBar.bounds;
     
+    
+#pragma mark - 设置代理
+    bottomView.delegate = self;
     //添加到父视图
     [self.tabBar addSubview:bottomView];
     
@@ -58,6 +61,13 @@
         
     }];
     
+}
+
+#pragma mark - 实现代理方法
+-(void)bottomView:(OABottomView *)bottomView didSelectIndex:(NSUInteger)idx {
+    
+    //修改标签控制器选中的索引
+    self.selectedIndex = idx;
 }
 
 #pragma mark - 添加标签的子控制器
