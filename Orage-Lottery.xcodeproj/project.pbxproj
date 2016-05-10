@@ -12,6 +12,9 @@
 		1AC5373C1CE1F4BC00DB6BBE /* OANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5373B1CE1F4BC00DB6BBE /* OANavigationController.m */; };
 		1AC5373F1CE2055200DB6BBE /* OAHallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5373E1CE2055200DB6BBE /* OAHallController.m */; };
 		1AC537421CE223CD00DB6BBE /* OAArenaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC537411CE223CD00DB6BBE /* OAArenaController.m */; };
+		1AC537451CE22B0F00DB6BBE /* OAGroupBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC537441CE22B0F00DB6BBE /* OAGroupBuyController.m */; };
+		1AC537481CE22B3A00DB6BBE /* OALuckyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC537471CE22B3A00DB6BBE /* OALuckyController.m */; };
+		1AC5374B1CE22C2200DB6BBE /* OAAllCategoryBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5374A1CE22C2200DB6BBE /* OAAllCategoryBtn.m */; };
 		1AFB29771CE1660400B23DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB29761CE1660400B23DD5 /* main.m */; };
 		1AFB29821CE1660400B23DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB29811CE1660400B23DD5 /* Assets.xcassets */; };
 		1AFB29851CE1660400B23DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB29831CE1660400B23DD5 /* LaunchScreen.storyboard */; };
@@ -36,6 +39,12 @@
 		1AC5373E1CE2055200DB6BBE /* OAHallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHallController.m; sourceTree = "<group>"; };
 		1AC537401CE223CD00DB6BBE /* OAArenaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAArenaController.h; sourceTree = "<group>"; };
 		1AC537411CE223CD00DB6BBE /* OAArenaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAArenaController.m; sourceTree = "<group>"; };
+		1AC537431CE22B0F00DB6BBE /* OAGroupBuyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAGroupBuyController.h; sourceTree = "<group>"; };
+		1AC537441CE22B0F00DB6BBE /* OAGroupBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAGroupBuyController.m; sourceTree = "<group>"; };
+		1AC537461CE22B3A00DB6BBE /* OALuckyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALuckyController.h; sourceTree = "<group>"; };
+		1AC537471CE22B3A00DB6BBE /* OALuckyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALuckyController.m; sourceTree = "<group>"; };
+		1AC537491CE22C2200DB6BBE /* OAAllCategoryBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAllCategoryBtn.h; sourceTree = "<group>"; };
+		1AC5374A1CE22C2200DB6BBE /* OAAllCategoryBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAllCategoryBtn.m; sourceTree = "<group>"; };
 		1AFB29721CE1660400B23DD5 /* Orage-Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Orage-Lottery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFB29761CE1660400B23DD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AFB29811CE1660400B23DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,6 +192,10 @@
 			isa = PBXGroup;
 			children = (
 				1AFB29C11CE16C0F00B23DD5 /* OADiscovery.storyboard */,
+				1AC537431CE22B0F00DB6BBE /* OAGroupBuyController.h */,
+				1AC537441CE22B0F00DB6BBE /* OAGroupBuyController.m */,
+				1AC537461CE22B3A00DB6BBE /* OALuckyController.h */,
+				1AC537471CE22B3A00DB6BBE /* OALuckyController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,6 +217,8 @@
 		1AFB29981CE1667500B23DD5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1AC537491CE22C2200DB6BBE /* OAAllCategoryBtn.h */,
+				1AC5374A1CE22C2200DB6BBE /* OAAllCategoryBtn.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -495,12 +510,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC537451CE22B0F00DB6BBE /* OAGroupBuyController.m in Sources */,
 				1AFB29BB1CE1667500B23DD5 /* AppDelegate.m in Sources */,
 				1AFB29CC1CE170F100B23DD5 /* OABottomView.m in Sources */,
 				1AC5373F1CE2055200DB6BBE /* OAHallController.m in Sources */,
 				1AC537391CE1F09600DB6BBE /* UIView+MDRExtension.m in Sources */,
 				1AFB29C91CE170C300B23DD5 /* OATabBarController.m in Sources */,
 				1AC537351CE19E4B00DB6BBE /* OABottoomButton.m in Sources */,
+				1AC537481CE22B3A00DB6BBE /* OALuckyController.m in Sources */,
+				1AC5374B1CE22C2200DB6BBE /* OAAllCategoryBtn.m in Sources */,
 				1AC537421CE223CD00DB6BBE /* OAArenaController.m in Sources */,
 				1AC5373C1CE1F4BC00DB6BBE /* OANavigationController.m in Sources */,
 				1AFB29771CE1660400B23DD5 /* main.m in Sources */,

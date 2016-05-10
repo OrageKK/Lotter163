@@ -26,6 +26,14 @@
     
     //统一设置导航栏的背景
     [nav setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+    
+//     设置导航栏的标题颜色
+    [nav setTitleTextAttributes:@{
+                                 NSForegroundColorAttributeName:[UIColor whiteColor]
+                                 }];
+    // 设置两侧按钮的文字颜色
+    [nav setTintColor:[UIColor whiteColor]];
+    
 }
 
 

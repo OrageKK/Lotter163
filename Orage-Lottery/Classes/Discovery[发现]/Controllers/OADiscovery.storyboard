@@ -53,6 +53,9 @@
                                                 <constraint firstItem="FYB-dd-Gnv" firstAttribute="leading" secondItem="YEP-U1-6ml" secondAttribute="leading" id="hec-Af-xWm"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="C6T-m8-1fo" kind="show" id="Uth-uI-zGM"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -137,6 +140,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="PHi-9d-ZMi" secondAttribute="trailing" id="zib-LM-MqQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ybR-Jp-HdP" kind="show" id="34W-kC-vrl"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -194,6 +200,54 @@
             </objects>
             <point key="canvasLocation" x="1323" y="425"/>
         </scene>
+        <!--Group Buy Controller-->
+        <scene sceneID="OfN-nv-iUK">
+            <objects>
+                <viewController id="C6T-m8-1fo" customClass="OAGroupBuyController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="02P-cF-he9"/>
+                        <viewControllerLayoutGuide type="bottom" id="OzN-wq-vMT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6mc-Fk-6vZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fdb-3g-Miu">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4WY-UR-KTx">
+                            <rect key="frame" x="256" y="11" width="88" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="全部彩种" image="YellowDownArrow"/>
+                            <connections>
+                                <action selector="topButtonClick:" destination="C6T-m8-1fo" eventType="touchUpInside" id="xkm-eE-cgc"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJ8-7X-5lg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="78"/>
+        </scene>
+        <!--Lucky Controller-->
+        <scene sceneID="24y-Be-cdF">
+            <objects>
+                <viewController id="ybR-Jp-HdP" customClass="OALuckyController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nLI-9a-kfB"/>
+                        <viewControllerLayoutGuide type="bottom" id="CbE-09-IbP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qa6-wy-LH4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zQp-cS-MQp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="834"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="XMq-84-k0n">
             <objects>
@@ -214,6 +268,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="YellowDownArrow" width="16" height="16"/>
         <image name="discovery_groupBuy_icon" width="113" height="67"/>
         <image name="discovery_groupBuy_title" width="54" height="23"/>
         <image name="discovery_joySquare_icon" width="110" height="70"/>
