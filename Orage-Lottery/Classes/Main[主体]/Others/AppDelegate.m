@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "OATabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,9 +16,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //创建窗口
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    //设置窗口的根控制器
+    OATabBarController *tabBarVc = [[OATabBarController alloc] init];
     
+    self.window.rootViewController = tabBarVc;
+    
+    //让窗口成为主窗口并可见
+    [self.window makeKeyAndVisible];
     
     
     

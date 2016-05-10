@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OATabBarController : UIViewController
+@interface OATabBarController : UITabBarController
 
 @end
