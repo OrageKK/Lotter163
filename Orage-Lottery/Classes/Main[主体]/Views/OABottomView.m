@@ -71,8 +71,8 @@
     
     // 遍历并布局按钮
     // 宽/高
-    CGFloat btnW = self.bounds.size.width / self.subviews.count;
-    CGFloat btnH = self.bounds.size.height;
+    CGFloat btnW = self.width / self.subviews.count;
+    CGFloat btnH = self.height;
     
     // y
     CGFloat btnY = 0;

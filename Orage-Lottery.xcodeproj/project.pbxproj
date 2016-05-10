@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1AC537351CE19E4B00DB6BBE /* OABottoomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC537341CE19E4B00DB6BBE /* OABottoomButton.m */; };
+		1AC537391CE1F09600DB6BBE /* UIView+MDRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC537381CE1F09600DB6BBE /* UIView+MDRExtension.m */; };
+		1AC5373C1CE1F4BC00DB6BBE /* OANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5373B1CE1F4BC00DB6BBE /* OANavigationController.m */; };
 		1AFB29771CE1660400B23DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB29761CE1660400B23DD5 /* main.m */; };
 		1AFB29821CE1660400B23DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB29811CE1660400B23DD5 /* Assets.xcassets */; };
 		1AFB29851CE1660400B23DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB29831CE1660400B23DD5 /* LaunchScreen.storyboard */; };
@@ -24,6 +26,10 @@
 /* Begin PBXFileReference section */
 		1AC537331CE19E4B00DB6BBE /* OABottoomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OABottoomButton.h; sourceTree = "<group>"; };
 		1AC537341CE19E4B00DB6BBE /* OABottoomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OABottoomButton.m; sourceTree = "<group>"; };
+		1AC537371CE1F09600DB6BBE /* UIView+MDRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+MDRExtension.h"; path = "Category/UIView+MDRExtension.h"; sourceTree = "<group>"; };
+		1AC537381CE1F09600DB6BBE /* UIView+MDRExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDRExtension.m"; path = "Category/UIView+MDRExtension.m"; sourceTree = "<group>"; };
+		1AC5373A1CE1F4BC00DB6BBE /* OANavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OANavigationController.h; sourceTree = "<group>"; };
+		1AC5373B1CE1F4BC00DB6BBE /* OANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OANavigationController.m; sourceTree = "<group>"; };
 		1AFB29721CE1660400B23DD5 /* Orage-Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Orage-Lottery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFB29761CE1660400B23DD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AFB29811CE1660400B23DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AC537361CE1F03300DB6BBE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1AC537371CE1F09600DB6BBE /* UIView+MDRExtension.h */,
+				1AC537381CE1F09600DB6BBE /* UIView+MDRExtension.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		1AFB29691CE1660400B23DD5 = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +322,7 @@
 		1AFB29AA1CE1667500B23DD5 /* Main[主体] */ = {
 			isa = PBXGroup;
 			children = (
+				1AC537361CE1F03300DB6BBE /* Category */,
 				1AFB29AB1CE1667500B23DD5 /* Controllers */,
 				1AFB29AC1CE1667500B23DD5 /* Models */,
 				1AFB29AD1CE1667500B23DD5 /* Others */,
@@ -320,6 +336,8 @@
 			children = (
 				1AFB29C71CE170C300B23DD5 /* OATabBarController.h */,
 				1AFB29C81CE170C300B23DD5 /* OATabBarController.m */,
+				1AC5373A1CE1F4BC00DB6BBE /* OANavigationController.h */,
+				1AC5373B1CE1F4BC00DB6BBE /* OANavigationController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -469,8 +487,10 @@
 			files = (
 				1AFB29BB1CE1667500B23DD5 /* AppDelegate.m in Sources */,
 				1AFB29CC1CE170F100B23DD5 /* OABottomView.m in Sources */,
+				1AC537391CE1F09600DB6BBE /* UIView+MDRExtension.m in Sources */,
 				1AFB29C91CE170C300B23DD5 /* OATabBarController.m in Sources */,
 				1AC537351CE19E4B00DB6BBE /* OABottoomButton.m in Sources */,
+				1AC5373C1CE1F4BC00DB6BBE /* OANavigationController.m in Sources */,
 				1AFB29771CE1660400B23DD5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

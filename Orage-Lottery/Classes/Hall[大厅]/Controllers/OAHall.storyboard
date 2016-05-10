@@ -27,7 +27,7 @@
         <!--Navigation Controller-->
         <scene sceneID="RSX-kZ-96Y">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xka-ON-UsP" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xka-ON-UsP" customClass="OANavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="417-F4-oas">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

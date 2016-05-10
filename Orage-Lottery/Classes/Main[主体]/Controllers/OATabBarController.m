@@ -8,6 +8,7 @@
 
 #import "OATabBarController.h"
 #import "OABottomView.h"
+#import "OANavigationController.h"
 @interface OATabBarController () <OABottomViewDelegate>
 
 @end
