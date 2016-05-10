@@ -11,6 +11,7 @@
 		1AC537391CE1F09600DB6BBE /* UIView+MDRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC537381CE1F09600DB6BBE /* UIView+MDRExtension.m */; };
 		1AC5373C1CE1F4BC00DB6BBE /* OANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5373B1CE1F4BC00DB6BBE /* OANavigationController.m */; };
 		1AC5373F1CE2055200DB6BBE /* OAHallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5373E1CE2055200DB6BBE /* OAHallController.m */; };
+		1AC537421CE223CD00DB6BBE /* OAArenaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC537411CE223CD00DB6BBE /* OAArenaController.m */; };
 		1AFB29771CE1660400B23DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB29761CE1660400B23DD5 /* main.m */; };
 		1AFB29821CE1660400B23DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB29811CE1660400B23DD5 /* Assets.xcassets */; };
 		1AFB29851CE1660400B23DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB29831CE1660400B23DD5 /* LaunchScreen.storyboard */; };
@@ -33,6 +34,8 @@
 		1AC5373B1CE1F4BC00DB6BBE /* OANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OANavigationController.m; sourceTree = "<group>"; };
 		1AC5373D1CE2055200DB6BBE /* OAHallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHallController.h; sourceTree = "<group>"; };
 		1AC5373E1CE2055200DB6BBE /* OAHallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHallController.m; sourceTree = "<group>"; };
+		1AC537401CE223CD00DB6BBE /* OAArenaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAArenaController.h; sourceTree = "<group>"; };
+		1AC537411CE223CD00DB6BBE /* OAArenaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAArenaController.m; sourceTree = "<group>"; };
 		1AFB29721CE1660400B23DD5 /* Orage-Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Orage-Lottery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFB29761CE1660400B23DD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AFB29811CE1660400B23DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				1AFB29BF1CE16C0200B23DD5 /* OAArena.storyboard */,
+				1AC537401CE223CD00DB6BBE /* OAArenaController.h */,
+				1AC537411CE223CD00DB6BBE /* OAArenaController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -496,6 +501,7 @@
 				1AC537391CE1F09600DB6BBE /* UIView+MDRExtension.m in Sources */,
 				1AFB29C91CE170C300B23DD5 /* OATabBarController.m in Sources */,
 				1AC537351CE19E4B00DB6BBE /* OABottoomButton.m in Sources */,
+				1AC537421CE223CD00DB6BBE /* OAArenaController.m in Sources */,
 				1AC5373C1CE1F4BC00DB6BBE /* OANavigationController.m in Sources */,
 				1AFB29771CE1660400B23DD5 /* main.m in Sources */,
 			);
