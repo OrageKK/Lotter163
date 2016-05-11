@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--开奖信息-->
         <scene sceneID="Vcj-sU-FaP">
             <objects>
                 <viewController id="Eij-lB-ISi" sceneMemberID="viewController">
@@ -18,7 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xQ0-5B-a3f"/>
+                    <navigationItem key="navigationItem" title="开奖信息" id="KSn-g6-ioE">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Vct-Gw-cVv">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Uf5-4s-mHg">
+                                <rect key="frame" x="494" y="11" width="86" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="开奖信息" image="Historyawards_pushSettings"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9p-Ks-59b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,4 +51,7 @@
             <point key="canvasLocation" x="350" y="286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Historyawards_pushSettings" width="14" height="13"/>
+    </resources>
 </document>

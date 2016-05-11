@@ -9,6 +9,7 @@
 #import "OATabBarController.h"
 #import "OABottomView.h"
 #import "OANavigationController.h"
+#import "OAMyController.h"
 @interface OATabBarController () <OABottomViewDelegate>
 
 @end
@@ -83,7 +84,9 @@
     //历史
     UINavigationController *historyNav = [self navWithStoryboardName:@"OAHistory"];
     //我的
-    UINavigationController *myLotteryNav = [self navWithStoryboardName:@"OAMy"];
+    OAMyController *myVc = [[OAMyController alloc] init];
+//    UINavigationController *myLotteryNav = [self navWithStoryboardName:@"OAMy"];
+    UINavigationController *myLotteryNav = [[UINavigationController alloc] initWithRootViewController:myVc];
     
     self.viewControllers = @[hallNav, arenaNav, discoveryNav, historyNav, myLotteryNav];
     
