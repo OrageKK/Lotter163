@@ -32,6 +32,61 @@
 
 }
 
+#pragma mark - 选中cell的代理方法
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    // MARK: - 1.取消选中效果
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    // MARK: - 2.获取选中行的所有数据
+    // 取出组的所有数据
+    NSDictionary *selGroup = self.groupsArr[indexPath.section];
+    
+    // 获取组内所有行
+    NSArray *selItems = selGroup[OAItems];
+    
+    // 取出选中行的数据
+    NSDictionary *selItem = selItems[indexPath.row];
+    
+    // MARK: - 3.跳转到目标控制器
+    // 3.1获取目标控制器的字符串
+    NSString *targetVcStr = selItem[OATargetVc];
+    
+    // 3.1.1如果字符串没有内容直接返回
+    if (targetVcStr.length == 0) {
+        return;
+    }
+    
+    // 3.2转为类
+    Class className = NSClassFromString(targetVcStr);
+    
+    // 3.2.1创建对象
+    UIViewController *targetVc = [[className alloc] init];
+    
+    // 设置标题
+    targetVc.navigationItem.title = selItem[OATitle];
+    
+    
+    
+#pragma mark - 如果是个设置控制器类型对象,加载plist文件
+    if ([targetVc isKindOfClass:[OASettingController class]]) {
+        
+        // 转换为设置控制器类型的对象
+        OASettingController *newSettingController = (OASettingController *)targetVc;
+        
+        // 配置plist文件
+        newSettingController.plistName = selItem[OAPlistName];
+        
+        // 跳转
+        [self.navigationController pushViewController:newSettingController animated:YES];
+    } else {
+        // 如果是其他普通控制器就直接跳转
+        
+        [self.navigationController pushViewController:targetVc animated:YES];
+    }
+}
+
+
 #pragma mark - 数据源方法
 // 有多少组
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

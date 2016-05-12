@@ -18,6 +18,8 @@
 				<string>UIImageView</string>
 				<key>OAAccessoryName</key>
 				<string>arrow_right</string>
+				<key>OATargetVc</key>
+				<string>OARedeemCodeController</string>
 			</dict>
 		</array>
 	</dict>
@@ -37,6 +39,10 @@
 				<string>UIImageView</string>
 				<key>OAAccessoryName</key>
 				<string>arrow_right</string>
+				<key>OATargetVc</key>
+				<string>OASettingController</string>
+				<key>OAPlistName</key>
+				<string>OASettingPush</string>
 			</dict>
 			<dict>
 				<key>icon</key>

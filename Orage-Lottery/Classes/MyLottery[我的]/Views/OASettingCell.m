@@ -15,9 +15,35 @@
     static NSString *ID = @"mmd";
     OASettingCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
-        cell =[[OASettingCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell =[[self alloc] initWithStyle:[self styleWithItem:item] reuseIdentifier:ID];
+        
     }
     return cell;
+}
+
+#pragma mark - 判断cell的样式
+//注意是类方法
++ (UITableViewCellStyle)styleWithItem:(NSDictionary *)item {
+    
+    // 定义一个样式的变量
+    UITableViewCellStyle style = UITableViewCellStyleDefault;
+    
+    if ([item[OACellStyle] isEqualToString:@"UITableViewCellStyleSubtitle"]) {
+        
+        style = UITableViewCellStyleSubtitle;
+    } else if([item[OACellStyle] isEqualToString:@"UITableViewCellStyleValue1"]) {
+        
+        style = UITableViewCellStyleValue1;
+    } else if([item[OACellStyle] isEqualToString:@"UITableViewCellStyleValue2"]) {
+        
+        style = UITableViewCellStyleValue2;
+    } else if([item[OACellStyle] isEqualToString:@"UITableViewCellStyleDefault"]) {
+        
+        style = UITableViewCellStyleDefault;
+    }
+    return style;
+    
+    
 }
 
 
@@ -26,13 +52,26 @@
     _cellItem = cellItem;
     
     // 设置数据
-    self.imageView.image = [UIImage imageNamed:cellItem[OAIcon]];
+    if ([cellItem[OAIcon] length] > 0) {
+        
+        
+        self.imageView.image = [UIImage imageNamed:cellItem[OAIcon]];
+    }
     
     self.textLabel.text = cellItem[OATitle];
+    
+    // 设置子标题
+    self.detailTextLabel.text = cellItem[OASubtitle];
+    
     
     // 1.取出对应的key值显示是箭头还是开关
     NSString *classStr = cellItem[OAAccessoryType];
     
+    
+    // 1.2- 如果没有对应的箭头或者开关,干脆不往下走了
+    if (classStr.length <= 0) {
+        return ;
+    }
     // 2.转为类
     Class className = NSClassFromString(classStr);
     
