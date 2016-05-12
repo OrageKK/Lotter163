@@ -187,6 +187,9 @@
     // 1.2 设置标题
     settingVc.navigationItem.title = @"设置";
     
+    // 1.3 设置要加载的plist文件
+    settingVc.plistName = @"OASettingHome";
+    
     // 2.跳转
     [self.navigationController pushViewController:settingVc animated:YES];
     

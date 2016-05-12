@@ -24,6 +24,8 @@
 		1AC24B591CE378CD00EB67AF /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC24B4E1CE378CD00EB67AF /* ViewController+MASAdditions.m */; };
 		1AC24B5D1CE3795000EB67AF /* OASettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC24B5C1CE3795000EB67AF /* OASettingController.m */; };
 		1AC24B601CE3797A00EB67AF /* OAMyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC24B5F1CE3797A00EB67AF /* OAMyController.m */; };
+		1AC24B631CE45A9300EB67AF /* OASettingHome.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AC24B621CE45A9300EB67AF /* OASettingHome.plist */; };
+		1AC24B661CE4A25100EB67AF /* OASettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC24B651CE4A25100EB67AF /* OASettingCell.m */; };
 		1AC537351CE19E4B00DB6BBE /* OABottoomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC537341CE19E4B00DB6BBE /* OABottoomButton.m */; };
 		1AC537391CE1F09600DB6BBE /* UIView+MDRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC537381CE1F09600DB6BBE /* UIView+MDRExtension.m */; };
 		1AC5373C1CE1F4BC00DB6BBE /* OANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5373B1CE1F4BC00DB6BBE /* OANavigationController.m */; };
@@ -83,6 +85,9 @@
 		1AC24B5C1CE3795000EB67AF /* OASettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OASettingController.m; sourceTree = "<group>"; };
 		1AC24B5E1CE3797A00EB67AF /* OAMyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMyController.h; sourceTree = "<group>"; };
 		1AC24B5F1CE3797A00EB67AF /* OAMyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMyController.m; sourceTree = "<group>"; };
+		1AC24B621CE45A9300EB67AF /* OASettingHome.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OASettingHome.plist; sourceTree = "<group>"; };
+		1AC24B641CE4A25100EB67AF /* OASettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASettingCell.h; sourceTree = "<group>"; };
+		1AC24B651CE4A25100EB67AF /* OASettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OASettingCell.m; sourceTree = "<group>"; };
 		1AC537331CE19E4B00DB6BBE /* OABottoomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OABottoomButton.h; sourceTree = "<group>"; };
 		1AC537341CE19E4B00DB6BBE /* OABottoomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OABottoomButton.m; sourceTree = "<group>"; };
 		1AC537371CE1F09600DB6BBE /* UIView+MDRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+MDRExtension.h"; path = "Category/UIView+MDRExtension.h"; sourceTree = "<group>"; };
@@ -170,6 +175,15 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		1AC24B611CE45A5D00EB67AF /* SettingPlists */ = {
+			isa = PBXGroup;
+			children = (
+				1AC24B621CE45A9300EB67AF /* OASettingHome.plist */,
+			);
+			name = SettingPlists;
+			path = "Classes/MyLottery[我的]/Controllers";
+			sourceTree = "<group>";
+		};
 		1AC537361CE1F03300DB6BBE /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +221,7 @@
 		1AFB29751CE1660400B23DD5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1AC24B611CE45A5D00EB67AF /* SettingPlists */,
 				1AFB29811CE1660400B23DD5 /* Assets.xcassets */,
 				1AFB29831CE1660400B23DD5 /* LaunchScreen.storyboard */,
 				1AFB29861CE1660400B23DD5 /* Info.plist */,
@@ -537,6 +552,8 @@
 		1AFB29B61CE1667500B23DD5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1AC24B641CE4A25100EB67AF /* OASettingCell.h */,
+				1AC24B651CE4A25100EB67AF /* OASettingCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -604,6 +621,7 @@
 				1AFB29C21CE16C0F00B23DD5 /* OADiscovery.storyboard in Resources */,
 				1AFB29C01CE16C0200B23DD5 /* OAArena.storyboard in Resources */,
 				1A0CA7801CE23D480048BF35 /* OARotateView.xib in Resources */,
+				1AC24B631CE45A9300EB67AF /* OASettingHome.plist in Resources */,
 				1AFB29851CE1660400B23DD5 /* LaunchScreen.storyboard in Resources */,
 				1AFB29C41CE16C1700B23DD5 /* OAHistory.storyboard in Resources */,
 				1AFB29BE1CE16BF200B23DD5 /* OAHall.storyboard in Resources */,
@@ -639,6 +657,7 @@
 				1AC24B5D1CE3795000EB67AF /* OASettingController.m in Sources */,
 				1AC5374B1CE22C2200DB6BBE /* OAAllCategoryBtn.m in Sources */,
 				1AC24B501CE378CD00EB67AF /* MASCompositeConstraint.m in Sources */,
+				1AC24B661CE4A25100EB67AF /* OASettingCell.m in Sources */,
 				1AC24B561CE378CD00EB67AF /* NSArray+MASAdditions.m in Sources */,
 				1AC537421CE223CD00DB6BBE /* OAArenaController.m in Sources */,
 				1AC5373C1CE1F4BC00DB6BBE /* OANavigationController.m in Sources */,

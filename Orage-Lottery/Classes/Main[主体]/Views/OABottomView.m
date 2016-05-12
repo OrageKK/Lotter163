@@ -40,7 +40,7 @@
 #pragma mark - 点击底部的按钮时调用
 - (void)btnClick:(OABottoomButton *)sender {
     
-    NSLog(@"按钮被点了");
+//    NSLog(@"按钮被点了");
     
     // MARK: - 1.修改按钮的状态
     // 1.将之前保存的清除

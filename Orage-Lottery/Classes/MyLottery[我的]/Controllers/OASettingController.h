@@ -10,4 +10,9 @@
 
 @interface OASettingController : UITableViewController
 
+/**
+ *  plist文件名
+ */
+@property (nonatomic,copy) NSString * plistName;
+
 @end
