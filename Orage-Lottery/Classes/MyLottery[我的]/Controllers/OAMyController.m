@@ -41,9 +41,14 @@
     
     // 设置导航栏标题
     self.title = @"我的彩票";
-    // MARK: push时隐藏标签控制器
-    self.hidesBottomBarWhenPushed = YES;
+ 
+    //     MARK: push时隐藏标签控制器
+    //        self.hidesBottomBarWhenPushed = YES;
+    
+    
+    
 }
+
 
 
 #pragma mark - 设置界面

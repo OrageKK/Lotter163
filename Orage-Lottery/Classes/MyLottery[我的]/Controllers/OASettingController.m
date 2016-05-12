@@ -16,5 +16,15 @@
     return [super initWithStyle:UITableViewStyleGrouped];
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+}
+
+- (BOOL)hidesBottomBarWhenPushed{
+    
+    return YES;
+}
+
 
 @end
