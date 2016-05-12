@@ -46,6 +46,15 @@
     
 }
 
+#pragma mark - 设置时间
+- (void)setTimeString:(NSString *)timeString {
+    
+    _timeString = timeString;
+    
+    self.detailTextLabel.text = timeString;
+    
+}
+
 
 #pragma mark - 重写set方法分发数据
 -(void)setCellItem:(NSDictionary *)cellItem{
@@ -63,6 +72,15 @@
     // 设置子标题
     self.detailTextLabel.text = cellItem[OASubtitle];
     
+    // 设置子标题颜色
+    BOOL isHeighLight = [cellItem[OAHighLight] boolValue];
+    
+    // 如果是高亮状态显示红色,否则显示黑色
+    if (isHeighLight) {
+        self.detailTextLabel.textColor = [UIColor redColor];
+    } else {
+        self.detailTextLabel.textColor = [UIColor blackColor];
+    }
     
     // 1.取出对应的key值显示是箭头还是开关
     NSString *classStr = cellItem[OAAccessoryType];

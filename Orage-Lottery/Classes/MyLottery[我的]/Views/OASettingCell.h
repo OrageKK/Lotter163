@@ -35,6 +35,14 @@
  */
 + (instancetype)cellWithTableView:(UITableView *)tableView andItem:(NSDictionary *)item;
 
+/**
+ *  cell要显示的所有数据
+ */
 @property (strong, nonatomic) NSDictionary *cellItem;
+
+/**
+ *  需要设置的时间数据
+ */
+@property (nonatomic, copy) NSString *timeString;
 
 @end

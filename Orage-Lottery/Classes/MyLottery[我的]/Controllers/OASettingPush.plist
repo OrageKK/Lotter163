@@ -28,6 +28,10 @@
 				<string>UIImageView</string>
 				<key>OAAccessoryName</key>
 				<string>arrow_right</string>
+				<key>OATargetVc</key>
+				<string>OAScoreLiveController</string>
+				<key>OAPlistName</key>
+				<string>OASettingPush2</string>
 			</dict>
 			<dict>
 				<key>title</key>
