@@ -6,6 +6,7 @@
 //  Copyright © 2016年 wzpnyg. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "OASettingController.h"
 
 @interface OAScoreLiveController : OASettingController

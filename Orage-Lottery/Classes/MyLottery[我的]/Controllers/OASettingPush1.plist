@@ -18,6 +18,8 @@
 				<string>每周二,四,日开奖</string>
 				<key>OACellStyle</key>
 				<string>UITableViewCellStyleSubtitle</string>
+				<key>OAKeyName</key>
+				<string>push1_ssq</string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -28,6 +30,8 @@
 				<string>每周二,四,日开奖</string>
 				<key>OACellStyle</key>
 				<string>UITableViewCellStyleSubtitle</string>
+				<key>OAKeyName</key>
+				<string>push1_dlt</string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -38,6 +42,8 @@
 				<string>每周二,四,日开奖</string>
 				<key>OACellStyle</key>
 				<string>UITableViewCellStyleSubtitle</string>
+				<key>OAKeyName</key>
+				<string>push1_3d</string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -48,6 +54,8 @@
 				<string>每周二,四,日开奖</string>
 				<key>OACellStyle</key>
 				<string>UITableViewCellStyleSubtitle</string>
+				<key>OAKeyName</key>
+				<string>push1_qlc</string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -58,6 +66,8 @@
 				<string>每周二,四,日开奖</string>
 				<key>OACellStyle</key>
 				<string>UITableViewCellStyleSubtitle</string>
+				<key>OAKeyName</key>
+				<string>push1_qxc</string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -68,6 +78,8 @@
 				<string>每周二,四,日开奖</string>
 				<key>OACellStyle</key>
 				<string>UITableViewCellStyleSubtitle</string>
+				<key>OAKeyName</key>
+				<string>push1_pl3</string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -78,6 +90,8 @@
 				<string>每周二,四,日开奖</string>
 				<key>OACellStyle</key>
 				<string>UITableViewCellStyleSubtitle</string>
+				<key>OAKeyName</key>
+				<string>push1_pl5</string>
 			</dict>
 		</array>
 	</dict>

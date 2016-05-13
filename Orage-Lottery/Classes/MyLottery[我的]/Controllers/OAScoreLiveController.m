@@ -33,7 +33,16 @@
 
 
 
+
 @implementation OAScoreLiveController
+
+-(void)viewDidLoad {
+    
+    [super viewDidLoad];
+}
+
+
+
 #pragma mark - 重写选中cell的方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -42,7 +51,7 @@
     
     
     // 如果是第0组-有switch无点击事件-直接返回
-    if (indexPath.row == 0) {
+    if (indexPath.section == 0) {
         return;
     }
     
@@ -58,6 +67,7 @@
     
     // 让文本框成为第一响应者
     [self.field becomeFirstResponder];
+    
     
    
     
@@ -144,7 +154,7 @@
         
         
         
-        _toolbar.items = @[done, flex, cancel];
+        _toolbar.items = @[cancel,flex, done ];
     }
     return _toolbar;
 }

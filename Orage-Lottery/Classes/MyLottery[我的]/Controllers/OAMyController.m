@@ -45,7 +45,10 @@
     //     MARK: push时隐藏标签控制器
     //        self.hidesBottomBarWhenPushed = YES;
     
-    
+    // 返回按钮
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.backBarButtonItem = backItem;
+
     
 }
 
@@ -186,6 +189,8 @@
     
     // 1.2 设置标题
     settingVc.navigationItem.title = @"设置";
+    
+
     
     // 1.3 设置要加载的plist文件
     settingVc.plistName = @"OASettingHome";

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>OAHeader</key>
+		<string></string>
+		<key>OAFooter</key>
+		<string>开启后,可设定时间提醒自己在开奖日不要忘了购彩</string>
+		<key>OAItems</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>购彩提醒</string>
+				<key>OAAccessoryType</key>
+				<string>UISwitch</string>
+				<key>OAKeyName</key>
+				<string>push4_gctx</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

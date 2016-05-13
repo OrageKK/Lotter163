@@ -53,6 +53,31 @@
     
     self.detailTextLabel.text = timeString;
     
+    //MARK: 1- 存储时间
+    //- 获取偏好设置对象
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    //- 存储数据
+    [defaults setObject:timeString forKey:self.cellItem[OATimeKey]];
+    //- 同步
+    [defaults synchronize];
+    
+}
+
+#pragma mark - 开关存储
+- (void)switcherValueChanged:(UISwitch *)sender {
+    
+    
+    
+    // MARK: - 2.存储开关状态数据
+    //- 获取偏好设置对象
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    //- 存储数据
+    [defaults setBool:sender.isOn forKey:self.cellItem[OAKeyName]];
+    
+    //- 同步
+    [defaults synchronize];
+    
 }
 
 
@@ -74,6 +99,23 @@
     
     // 设置子标题颜色
     BOOL isHeighLight = [cellItem[OAHighLight] boolValue];
+    
+    // MARK: 2- 读取时间数据
+    if ([cellItem[OATimeKey] length] > 0) {
+        
+        // - 获取偏好设置对象
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        // - 读取时间
+        NSString *timeStr = [defaults objectForKey:cellItem[OATimeKey]];
+        
+        // - 设置时间
+        // 如果没有读取出数据,就别设置了
+        if (timeStr.length > 0) {
+            self.detailTextLabel.text = timeStr;
+        }
+    }
+    
     
     // 如果是高亮状态显示红色,否则显示黑色
     if (isHeighLight) {
@@ -112,8 +154,26 @@
         UISwitch *switcher = (UISwitch *)obj;
         
         self.accessoryView = switcher;
+        // MARK: - 1.读取开关的数据
+        //- 获取偏好设置对象
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        //打印沙盒路径
+        //NSLog(@"%@",NSHomeDirectory());
+        
+        //- 读取数据
+        BOOL isOn = [defaults boolForKey:cellItem[OAKeyName]];
+        
+        //- 设置给开关
+        switcher.on = isOn;
+        
+        // 开关状态是否改变
+        [switcher addTarget:self action:@selector(switcherValueChanged:) forControlEvents:UIControlEventValueChanged];
+        
+        self.accessoryView = switcher;
     }
 
+    
 }
 
 

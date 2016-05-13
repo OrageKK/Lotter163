@@ -14,6 +14,8 @@
 				<string>推送我关注的比赛</string>
 				<key>OAAccessoryType</key>
 				<string>UISwitch</string>
+				<key>OAKeyName</key>
+				<string>push2_gz</string>
 			</dict>
 		</array>
 	</dict>
@@ -33,6 +35,8 @@
 				<string>UITableViewCellStyleValue1</string>
 				<key>OAHighLight</key>
 				<true/>
+				<key>OATimeKey</key>
+				<string>push2_startTime</string>
 			</dict>
 		</array>
 	</dict>
@@ -52,6 +56,8 @@
 				<string>UITableViewCellStyleValue1</string>
 				<key>OAHighLight</key>
 				<true/>
+				<key>OATimeKey</key>
+				<string>push2_endTime</string>
 			</dict>
 		</array>
 	</dict>

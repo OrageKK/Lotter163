@@ -29,7 +29,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    // 返回按钮
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.backBarButtonItem = backItem;
 }
 
 #pragma mark - 选中cell的代理方法

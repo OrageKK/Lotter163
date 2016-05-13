@@ -51,6 +51,8 @@
 				<string>摇一摇机选</string>
 				<key>OAAccessoryType</key>
 				<string>UISwitch</string>
+				<key>OAKeyName</key>
+				<string>home_homeshake</string>
 			</dict>
 			<dict>
 				<key>icon</key>
@@ -59,6 +61,8 @@
 				<string>声音效果</string>
 				<key>OAAccessoryType</key>
 				<string>UISwitch</string>
+				<key>OAKeyName</key>
+				<string>home_sound_effect</string>
 			</dict>
 			<dict>
 				<key>icon</key>
@@ -67,6 +71,8 @@
 				<string>购彩小助手</string>
 				<key>OAAccessoryType</key>
 				<string>UISwitch</string>
+				<key>OAKeyName</key>
+				<string>home_LotteryRecommend</string>
 			</dict>
 		</array>
 	</dict>

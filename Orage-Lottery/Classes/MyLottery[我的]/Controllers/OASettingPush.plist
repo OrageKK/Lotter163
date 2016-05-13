@@ -40,6 +40,10 @@
 				<string>UIImageView</string>
 				<key>OAAccessoryName</key>
 				<string>arrow_right</string>
+				<key>OATargetVc</key>
+				<string>OASettingController</string>
+				<key>OAPlistName</key>
+				<string>OASettingPush3</string>
 			</dict>
 			<dict>
 				<key>title</key>
@@ -48,6 +52,10 @@
 				<string>UIImageView</string>
 				<key>OAAccessoryName</key>
 				<string>arrow_right</string>
+				<key>OATargetVc</key>
+				<string>OASettingController</string>
+				<key>OAPlistName</key>
+				<string>OASettingPush4</string>
 			</dict>
 		</array>
 	</dict>
