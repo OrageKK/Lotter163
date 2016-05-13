@@ -35,6 +35,21 @@
     self.navigationItem.backBarButtonItem = backItem;
 }
 
+#pragma mark - 检查新版本
+- (void)checkUpdate {
+    
+    
+    // 通过UIAlertController弹窗提示,已经是最新版本了.
+    
+    UIAlertController *alertController =[UIAlertController alertControllerWithTitle:@"提示" message:@"已经是最新版本" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+    [alertController addAction:action];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+}
+
 #pragma mark - 选中cell的代理方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -50,6 +65,30 @@
     
     // 取出选中行的数据
     NSDictionary *selItem = selItems[indexPath.row];
+    
+    
+    
+    // MARK: - 检查新版本,执行cell需要的方法
+    
+    // 取出方法名字符串
+    NSString *selStr = selItem[OACallFunc];
+    // 转为OC中的方法
+    SEL selector = NSSelectorFromString(selStr);
+    // 先判断再执行
+    if ([self respondsToSelector:selector]) {
+    // 宏的作用->告诉编译器忽略performSelector的警告
+#pragma clang diagnostic push
+        
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        // 执行方法
+        [self performSelector:selector];
+#pragma clang diagnostic pop
+    }
+    
+    
+    
+    
+
     
     // MARK: - 3.跳转到目标控制器
     // 3.1获取目标控制器的字符串

@@ -25,7 +25,7 @@
 #define OAHighLight     @"OAHighLight"              // 子标题颜色
 #define OAKeyName       @"OAKeyName"              // 存储和读取开关状态时的key
 #define OATimeKey       @"OATimeKey"              // 存储和读取时间
-
+#define OACallFunc      @"OACallFunc"             //cell需要的方法名
 
 
 @interface OASettingCell : UITableViewCell

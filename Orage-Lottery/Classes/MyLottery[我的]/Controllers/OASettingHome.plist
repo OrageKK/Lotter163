@@ -92,6 +92,8 @@
 				<string>UIImageView</string>
 				<key>OAAccessoryName</key>
 				<string>arrow_right</string>
+				<key>OACallFunc</key>
+				<string>checkUpdate</string>
 			</dict>
 			<dict>
 				<key>icon</key>

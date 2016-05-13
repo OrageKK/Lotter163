@@ -53,7 +53,6 @@
 		1AFB29C01CE16C0200B23DD5 /* OAArena.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB29BF1CE16C0200B23DD5 /* OAArena.storyboard */; };
 		1AFB29C21CE16C0F00B23DD5 /* OADiscovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB29C11CE16C0F00B23DD5 /* OADiscovery.storyboard */; };
 		1AFB29C41CE16C1700B23DD5 /* OAHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB29C31CE16C1700B23DD5 /* OAHistory.storyboard */; };
-		1AFB29C61CE16C2400B23DD5 /* OAMy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB29C51CE16C2400B23DD5 /* OAMy.storyboard */; };
 		1AFB29C91CE170C300B23DD5 /* OATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB29C81CE170C300B23DD5 /* OATabBarController.m */; };
 		1AFB29CC1CE170F100B23DD5 /* OABottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB29CB1CE170F100B23DD5 /* OABottomView.m */; };
 /* End PBXBuildFile section */
@@ -142,7 +141,6 @@
 		1AFB29BF1CE16C0200B23DD5 /* OAArena.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OAArena.storyboard; sourceTree = "<group>"; };
 		1AFB29C11CE16C0F00B23DD5 /* OADiscovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OADiscovery.storyboard; sourceTree = "<group>"; };
 		1AFB29C31CE16C1700B23DD5 /* OAHistory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OAHistory.storyboard; sourceTree = "<group>"; };
-		1AFB29C51CE16C2400B23DD5 /* OAMy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OAMy.storyboard; sourceTree = "<group>"; };
 		1AFB29C71CE170C300B23DD5 /* OATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OATabBarController.h; sourceTree = "<group>"; };
 		1AFB29C81CE170C300B23DD5 /* OATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OATabBarController.m; sourceTree = "<group>"; };
 		1AFB29CA1CE170F100B23DD5 /* OABottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OABottomView.h; sourceTree = "<group>"; };
@@ -567,7 +565,6 @@
 			isa = PBXGroup;
 			children = (
 				1AC24B5A1CE3792800EB67AF /* Settings */,
-				1AFB29C51CE16C2400B23DD5 /* OAMy.storyboard */,
 				1AC24B5E1CE3797A00EB67AF /* OAMyController.h */,
 				1AC24B5F1CE3797A00EB67AF /* OAMyController.m */,
 			);
@@ -660,7 +657,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AFB29C61CE16C2400B23DD5 /* OAMy.storyboard in Resources */,
 				1AFB29C21CE16C0F00B23DD5 /* OADiscovery.storyboard in Resources */,
 				1A2FCBF91CE59D9500344227 /* more_project.json in Resources */,
 				1AFB29C01CE16C0200B23DD5 /* OAArena.storyboard in Resources */,
