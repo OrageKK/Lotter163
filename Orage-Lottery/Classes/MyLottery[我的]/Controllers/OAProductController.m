@@ -71,6 +71,24 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     // 获取到选中的数据
     OAProduct *selPro = self.productsArr[indexPath.item];
+    
+    NSString *appStr = [NSString stringWithFormat:@"%@://%@",selPro.customUrl, selPro.ID];
+    
+    NSURL *appUrl = [NSURL URLWithString:appStr];
+    
+    UIApplication *app = [UIApplication sharedApplication];
+    
+    // 如果可以跳转到别的应用,那就跳转
+    if ([app canOpenURL:appUrl]) {
+        
+        [app openURL:appUrl];
+        
+    } else {
+        
+        // 去AppStore下载应用
+        [app openURL:[NSURL URLWithString:selPro.url]];
+    }
+
 }
 
 

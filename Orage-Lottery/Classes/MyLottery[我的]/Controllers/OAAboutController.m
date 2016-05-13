@@ -34,6 +34,12 @@
 - (void)scoreSupport {
     
     NSLog(@"感谢评分支持");
+    
+    // 1.评分支持链接NSURL https://www.github.com
+    NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/cn/app/id411654863?mt=8"];
+    
+    // 2.通过应用程序对象打开链接
+    [[UIApplication sharedApplication] openURL:url];
 }
 
 #pragma mark - 客服电话
@@ -41,6 +47,16 @@
     
     
     NSLog(@"拨打客服电话");
+    NSURL *telUrl = [NSURL URLWithString:@"tel://10086"];
+    //    @"facetime://huijuan@apple.com";
+    if ([[UIApplication sharedApplication] canOpenURL:telUrl]) {
+        
+        [[UIApplication sharedApplication] openURL:telUrl];
+    } else {
+        
+        NSLog(@"不能打电话");
+    }
+
     
 }
 
