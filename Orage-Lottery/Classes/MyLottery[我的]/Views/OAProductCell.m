@@ -38,7 +38,8 @@
         [self addSubview:titleLbl];
         _titleLbl = titleLbl;
         
-        
+        self.iconView.layer.cornerRadius = 10;
+        self.iconView.layer.masksToBounds = YES;
         
     }
     return self;

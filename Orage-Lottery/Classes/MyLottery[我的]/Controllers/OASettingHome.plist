@@ -104,6 +104,10 @@
 				<string>UIImageView</string>
 				<key>OAAccessoryName</key>
 				<string>arrow_right</string>
+				<key>OATargetVc</key>
+				<string>OASettingController</string>
+				<key>OAPlistName</key>
+				<string>OASettingShare</string>
 			</dict>
 			<dict>
 				<key>icon</key>
@@ -126,6 +130,10 @@
 				<string>UIImageView</string>
 				<key>OAAccessoryName</key>
 				<string>arrow_right</string>
+				<key>OATargetVc</key>
+				<string>OAAboutController</string>
+				<key>OAPlistName</key>
+				<string>OASettingAbout</string>
 			</dict>
 		</array>
 	</dict>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>OAHeader</key>
+		<string></string>
+		<key>OAFooter</key>
+		<string></string>
+		<key>OAItems</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>评分支持</string>
+				<key>OAAccessoryType</key>
+				<string>UIImageView</string>
+				<key>OAAccessoryName</key>
+				<string>arrow_right</string>
+				<key>OACallFunc</key>
+				<string>scoreSupport</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>客服电话</string>
+				<key>OASubtitle</key>
+				<string>10086</string>
+				<key>OACellStyle</key>
+				<string>UITableViewCellStyleValue1</string>
+				<key>OACallFunc</key>
+				<string>callMM</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

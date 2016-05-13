@@ -16,6 +16,10 @@
 		1A2FCBFC1CE5CB4400344227 /* OAProductController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FCBFB1CE5CB4400344227 /* OAProductController.m */; };
 		1A2FCBFF1CE5CC8C00344227 /* OAProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FCBFE1CE5CC8C00344227 /* OAProductCell.m */; };
 		1A2FCC021CE5E1B900344227 /* OAProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FCC011CE5E1B900344227 /* OAProduct.m */; };
+		1A2FCC041CE5FFEE00344227 /* OASettingShare.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A2FCC031CE5FFEE00344227 /* OASettingShare.plist */; };
+		1A2FCC071CE639EE00344227 /* OAAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FCC061CE639EE00344227 /* OAAboutView.m */; };
+		1A2FCC091CE63E8E00344227 /* OASettingAbout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A2FCC081CE63E8E00344227 /* OASettingAbout.plist */; };
+		1A2FCC0C1CE63EFF00344227 /* OAAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FCC0B1CE63EFF00344227 /* OAAboutController.m */; };
 		1AC24B501CE378CD00EB67AF /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC24B371CE378CD00EB67AF /* MASCompositeConstraint.m */; };
 		1AC24B511CE378CD00EB67AF /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC24B3A1CE378CD00EB67AF /* MASConstraint.m */; };
 		1AC24B521CE378CD00EB67AF /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC24B3C1CE378CD00EB67AF /* MASConstraintMaker.m */; };
@@ -73,6 +77,12 @@
 		1A2FCBFE1CE5CC8C00344227 /* OAProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAProductCell.m; sourceTree = "<group>"; };
 		1A2FCC001CE5E1B900344227 /* OAProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAProduct.h; sourceTree = "<group>"; };
 		1A2FCC011CE5E1B900344227 /* OAProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAProduct.m; sourceTree = "<group>"; };
+		1A2FCC031CE5FFEE00344227 /* OASettingShare.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OASettingShare.plist; sourceTree = "<group>"; };
+		1A2FCC051CE639EE00344227 /* OAAboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAboutView.h; sourceTree = "<group>"; };
+		1A2FCC061CE639EE00344227 /* OAAboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAboutView.m; sourceTree = "<group>"; };
+		1A2FCC081CE63E8E00344227 /* OASettingAbout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OASettingAbout.plist; sourceTree = "<group>"; };
+		1A2FCC0A1CE63EFF00344227 /* OAAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAboutController.h; sourceTree = "<group>"; };
+		1A2FCC0B1CE63EFF00344227 /* OAAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAboutController.m; sourceTree = "<group>"; };
 		1AC24B361CE378CD00EB67AF /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		1AC24B371CE378CD00EB67AF /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		1AC24B381CE378CD00EB67AF /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -202,6 +212,8 @@
 				1AC24B711CE4E20A00EB67AF /* OAScoreLiveController.m */,
 				1A2FCBFA1CE5CB4400344227 /* OAProductController.h */,
 				1A2FCBFB1CE5CB4400344227 /* OAProductController.m */,
+				1A2FCC0A1CE63EFF00344227 /* OAAboutController.h */,
+				1A2FCC0B1CE63EFF00344227 /* OAAboutController.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -215,6 +227,8 @@
 				1AC24B6E1CE4E09700EB67AF /* OASettingPush2.plist */,
 				1AC24B731CE55A6200EB67AF /* OASettingPush3.plist */,
 				1AC24B751CE55B2800EB67AF /* OASettingPush4.plist */,
+				1A2FCC031CE5FFEE00344227 /* OASettingShare.plist */,
+				1A2FCC081CE63E8E00344227 /* OASettingAbout.plist */,
 			);
 			name = SettingPlists;
 			path = "Classes/MyLottery[我的]/Controllers";
@@ -594,6 +608,8 @@
 				1AC24B651CE4A25100EB67AF /* OASettingCell.m */,
 				1A2FCBFD1CE5CC8C00344227 /* OAProductCell.h */,
 				1A2FCBFE1CE5CC8C00344227 /* OAProductCell.m */,
+				1A2FCC051CE639EE00344227 /* OAAboutView.h */,
+				1A2FCC061CE639EE00344227 /* OAAboutView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -659,6 +675,7 @@
 			files = (
 				1AFB29C21CE16C0F00B23DD5 /* OADiscovery.storyboard in Resources */,
 				1A2FCBF91CE59D9500344227 /* more_project.json in Resources */,
+				1A2FCC091CE63E8E00344227 /* OASettingAbout.plist in Resources */,
 				1AFB29C01CE16C0200B23DD5 /* OAArena.storyboard in Resources */,
 				1A0CA7801CE23D480048BF35 /* OARotateView.xib in Resources */,
 				1AC24B761CE55B2800EB67AF /* OASettingPush4.plist in Resources */,
@@ -672,6 +689,7 @@
 				1AC24B741CE55A6200EB67AF /* OASettingPush3.plist in Resources */,
 				1A0CA7851CE23D560048BF35 /* OALuckyViewController.xib in Resources */,
 				1AFB29821CE1660400B23DD5 /* Assets.xcassets in Resources */,
+				1A2FCC041CE5FFEE00344227 /* OASettingShare.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +702,7 @@
 			files = (
 				1AC537451CE22B0F00DB6BBE /* OAGroupBuyController.m in Sources */,
 				1A0CA77F1CE23D480048BF35 /* OARotateView.m in Sources */,
+				1A2FCC071CE639EE00344227 /* OAAboutView.m in Sources */,
 				1AFB29BB1CE1667500B23DD5 /* AppDelegate.m in Sources */,
 				1AFB29CC1CE170F100B23DD5 /* OABottomView.m in Sources */,
 				1AC24B691CE4B0AB00EB67AF /* OARedeemCodeController.m in Sources */,
@@ -702,6 +721,7 @@
 				1AC537481CE22B3A00DB6BBE /* OALuckyController.m in Sources */,
 				1A2FCBFC1CE5CB4400344227 /* OAProductController.m in Sources */,
 				1AC24B5D1CE3795000EB67AF /* OASettingController.m in Sources */,
+				1A2FCC0C1CE63EFF00344227 /* OAAboutController.m in Sources */,
 				1AC5374B1CE22C2200DB6BBE /* OAAllCategoryBtn.m in Sources */,
 				1AC24B501CE378CD00EB67AF /* MASCompositeConstraint.m in Sources */,
 				1AC24B661CE4A25100EB67AF /* OASettingCell.m in Sources */,

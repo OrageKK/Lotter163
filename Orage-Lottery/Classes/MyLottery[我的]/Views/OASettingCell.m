@@ -153,7 +153,7 @@
     } else if ([obj isKindOfClass:[UISwitch class]]){
         UISwitch *switcher = (UISwitch *)obj;
         
-        self.accessoryView = switcher;
+//        self.accessoryView = switcher;
         // MARK: - 1.读取开关的数据
         //- 获取偏好设置对象
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
