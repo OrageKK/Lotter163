@@ -35,6 +35,27 @@
     [nav setTintColor:[UIColor whiteColor]];
     
 }
+#pragma mark - 重写系统提供的方法,拦截push操作
+/**
+ *  @param viewController 就是要跳转到的目标控制器
+ *  @param animated       是否支持动画
+ */
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    if (self.viewControllers.count > 0) {
+        // 统一隐藏底部的tabBar
+        viewController.hidesBottomBarWhenPushed = YES;
+        
+    }
+    // 返回按钮
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.topViewController.navigationItem.backBarButtonItem = backItem;
+    
+    [super pushViewController:viewController animated:animated];
+    
+}
+
+
 
 
 - (void)viewDidLoad {

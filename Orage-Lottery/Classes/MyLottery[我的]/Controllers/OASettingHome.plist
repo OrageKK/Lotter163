@@ -112,6 +112,8 @@
 				<string>UIImageView</string>
 				<key>OAAccessoryName</key>
 				<string>arrow_right</string>
+				<key>OATargetVc</key>
+				<string>OAProductController</string>
 			</dict>
 			<dict>
 				<key>icon</key>
