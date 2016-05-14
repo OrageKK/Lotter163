@@ -18,7 +18,36 @@
 #pragma mark - 判断新特性界面的逻辑
 - (BOOL)isNewVersion {
     
-    return YES;
+    // 获取当前版本号
+    // 获取info.plist文件中的所有信息
+    NSDictionary *info = [NSBundle mainBundle].infoDictionary;
+    
+    // 获取应用版本号
+    NSString *version = info[@"CFBundleShortVersionString"];
+    
+    // MARK:旧的版本号从偏好设置中读取
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    // 读取旧版本号
+    NSString *lodVersion = [defaults objectForKey:@"app_version"];
+    
+    // 比较版本号
+    // 如果新的等于旧的,就不用显示新特性
+    if ([version isEqualToString:lodVersion]) {
+        return NO;
+    } else {
+        // 如果新的不等于旧的,显示新特性界面
+        // 存储版本号信息
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        [defaults setObject:version forKey:@"app_version"];
+        
+        //同步
+        [defaults synchronize];
+        
+        return YES;
+    }
+
 }
 
 
