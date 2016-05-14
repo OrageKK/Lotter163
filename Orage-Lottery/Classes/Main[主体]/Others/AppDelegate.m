@@ -8,21 +8,35 @@
 
 #import "AppDelegate.h"
 #import "OATabBarController.h"
+#import "OAGuideController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
+#pragma mark - 判断新特性界面的逻辑
+- (BOOL)isNewVersion {
+    
+    return YES;
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    // 设置窗口的根控制器
-    OATabBarController *tabBarVc = [[OATabBarController alloc] init];
-    
-    self.window.rootViewController = tabBarVc;
+    // 2.设置窗口的根控制器
+    if ([self isNewVersion]) {
+        // 是新版本
+        self.window.rootViewController = [[OAGuideController alloc] init];
+        
+    } else {
+        
+        // 不是新版本
+        self.window.rootViewController = [[OATabBarController alloc] init];
+    }
+
     
     // 让窗口成为主窗口并可见
     [self.window makeKeyAndVisible];

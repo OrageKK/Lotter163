@@ -20,6 +20,8 @@
 		1A2FCC071CE639EE00344227 /* OAAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FCC061CE639EE00344227 /* OAAboutView.m */; };
 		1A2FCC091CE63E8E00344227 /* OASettingAbout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A2FCC081CE63E8E00344227 /* OASettingAbout.plist */; };
 		1A2FCC0C1CE63EFF00344227 /* OAAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FCC0B1CE63EFF00344227 /* OAAboutController.m */; };
+		1A2FCC0F1CE64C3700344227 /* OAGuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FCC0E1CE64C3700344227 /* OAGuideController.m */; };
+		1A2FCC121CE64C4C00344227 /* OAGuideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FCC111CE64C4C00344227 /* OAGuideCell.m */; };
 		1AC24B501CE378CD00EB67AF /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC24B371CE378CD00EB67AF /* MASCompositeConstraint.m */; };
 		1AC24B511CE378CD00EB67AF /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC24B3A1CE378CD00EB67AF /* MASConstraint.m */; };
 		1AC24B521CE378CD00EB67AF /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC24B3C1CE378CD00EB67AF /* MASConstraintMaker.m */; };
@@ -83,6 +85,10 @@
 		1A2FCC081CE63E8E00344227 /* OASettingAbout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OASettingAbout.plist; sourceTree = "<group>"; };
 		1A2FCC0A1CE63EFF00344227 /* OAAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAboutController.h; sourceTree = "<group>"; };
 		1A2FCC0B1CE63EFF00344227 /* OAAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAboutController.m; sourceTree = "<group>"; };
+		1A2FCC0D1CE64C3700344227 /* OAGuideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAGuideController.h; sourceTree = "<group>"; };
+		1A2FCC0E1CE64C3700344227 /* OAGuideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAGuideController.m; sourceTree = "<group>"; };
+		1A2FCC101CE64C4C00344227 /* OAGuideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAGuideCell.h; sourceTree = "<group>"; };
+		1A2FCC111CE64C4C00344227 /* OAGuideCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAGuideCell.m; sourceTree = "<group>"; };
 		1AC24B361CE378CD00EB67AF /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		1AC24B371CE378CD00EB67AF /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		1AC24B381CE378CD00EB67AF /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -406,6 +412,8 @@
 		1AFB299A1CE1667500B23DD5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1A2FCC0D1CE64C3700344227 /* OAGuideController.h */,
+				1A2FCC0E1CE64C3700344227 /* OAGuideController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -427,6 +435,8 @@
 		1AFB299D1CE1667500B23DD5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1A2FCC101CE64C4C00344227 /* OAGuideCell.h */,
+				1A2FCC111CE64C4C00344227 /* OAGuideCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -725,9 +735,11 @@
 				1AC5374B1CE22C2200DB6BBE /* OAAllCategoryBtn.m in Sources */,
 				1AC24B501CE378CD00EB67AF /* MASCompositeConstraint.m in Sources */,
 				1AC24B661CE4A25100EB67AF /* OASettingCell.m in Sources */,
+				1A2FCC121CE64C4C00344227 /* OAGuideCell.m in Sources */,
 				1A2FCC021CE5E1B900344227 /* OAProduct.m in Sources */,
 				1AC24B561CE378CD00EB67AF /* NSArray+MASAdditions.m in Sources */,
 				1AC537421CE223CD00DB6BBE /* OAArenaController.m in Sources */,
+				1A2FCC0F1CE64C3700344227 /* OAGuideController.m in Sources */,
 				1AC5373C1CE1F4BC00DB6BBE /* OANavigationController.m in Sources */,
 				1AC24B581CE378CD00EB67AF /* View+MASAdditions.m in Sources */,
 				1A2FCBFF1CE5CC8C00344227 /* OAProductCell.m in Sources */,
